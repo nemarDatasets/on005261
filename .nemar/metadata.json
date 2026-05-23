@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Gloups_MEG",
+  "description": "This magnetoencephalography (MEG) dataset comprises recordings from 17 adult participants performing a learning task and resting-state condition using a 4D NeuroImaging system with 248 magnetometer channels. This is a NEMAR-hosted version of OpenNeuro dataset ds005261 (v2.0.0), part of a multimodal neuroimaging study investigating speech sequence production and phonotactic constraints. The MEG recordings provide complementary temporal resolution for understanding cortico-cerebellar mechanisms underlying speech production. Related fMRI data from the same participants are available in OpenNeuro dataset ds004597.",
+  "methods_description": "MEG data were acquired using a 4D NeuroImaging system with 248 magnetometer channels. Participants completed a learning task and a resting-state condition during recording. Data acquisition was performed at the MEG Centre, Timone Hospital, Marseille, France.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,6 +12,45 @@
     "Valerie Chanoine": {},
     "Jean-Michel Badier": {}
   },
+  "keywords": [
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+    },
+    {
+      "term": "speech production",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013060"
+    },
+    {
+      "term": "learning task"
+    },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "phonotactic constraints"
+    },
+    {
+      "term": "pseudowords"
+    },
+    {
+      "term": "cortico-cerebellar"
+    },
+    {
+      "term": "cerebellar"
+    },
+    {
+      "term": "multimodal"
+    },
+    {
+      "term": "neurophysiology"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005261.v2.0.0",
@@ -35,12 +76,23 @@
       "identifier": "10.18112/openneuro.ds004597.v2.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsSupplementedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/sdata.2018.110",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
     {
       "funder_name": "Institute of Convergence ILCB",
-      "award_number": "ANR-16-CONV-0002"
+      "award_number": "ANR-16-CONV-0002",
+      "award_title": "France 2030"
     },
     {
       "funder_name": "Aix-Marseille University",
@@ -49,11 +101,11 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
   "modalities": [
     "beh",
     "meg"
   ],
-  "resource_type_specific": "Neuroimaging Dataset",
   "sizes": [
     "241.6 GB (14504 files)"
   ],
@@ -69,45 +121,6 @@
     ".txt",
     ".wav",
     ".yml"
-  ],
-  "description": "This magnetoencephalography (MEG) dataset comprises recordings from 17 adult participants performing a learning task and resting-state condition using a 4D NeuroImaging system with 248 magnetometer channels. The dataset is part of a multimodal neuroimaging study investigating speech sequence production and phonotactic legality. Complementary fMRI data from the same participants are available in the related OpenNeuro dataset ds004597 (Gloups). The MEG recordings provide high temporal resolution neurophysiological measurements to characterize cortical and cerebellar mechanisms underlying speech production.",
-  "methods_description": "MEG data were acquired using a 4D NeuroImaging system with 248 magnetometer channels at the MEG Centre (Timone Hospital, Marseille, France). Participants completed a learning task and a resting-state condition during recording. Note: Participant identifiers differ between the fMRI and MEG datasets.",
-  "keywords": [
-    {
-      "term": "MEG",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
-    },
-    {
-      "term": "Magnetoencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
-    },
-    {
-      "term": "speech production",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013060"
-    },
-    {
-      "term": "learning task",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D007858"
-    },
-    {
-      "term": "resting-state",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D012146"
-    },
-    {
-      "term": "phonotactics",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D010701"
-    },
-    {
-      "term": "pseudowords",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D008037"
-    }
   ],
   "source_hash": "a9313c2b02f0f8e91d3a50d69c2a15e4f4756f898ec2733b2d04069019aa1907"
 }
